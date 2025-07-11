@@ -13,20 +13,7 @@ public:
         cin >> name >> dob >> ctzn;
     }
 
-    int returnCtzn()
-    {
-        return ctzn;
-    }
-
-    char *returnName()
-    {
-        return name;
-    }
-
-    char *returnDOB()
-    {
-        return dob;
-    }
+    friend class doctor;
 };
 
 class doctor
@@ -40,12 +27,12 @@ public:
         cin >> dqual >> dspec;
     }
 
-    void display(char name[], int ctzn, char dob[])
+    void display(person p1)
     {
-        cout << "Displaying his details-" << endl
-             << "Name-" << name << endl
-             << "Citizenship Number- " << ctzn << endl
-             << "Date Of Birth- " << dob << endl
+        cout << "Displaying his details -" << endl
+             << "Name-" << p1.name << endl
+             << "Citizenship Number- " << p1.ctzn << endl
+             << "Date Of Birth- " << p1.dob << endl
              << "Qualification- " << dqual << endl
              << "Speciality- " << dspec << endl;
     }
@@ -57,6 +44,6 @@ int main()
     doctor d1;
     p1.getPerson();
     d1.getDoctor();
-    d1.display(p1.returnName(), p1.returnCtzn(), p1.returnDOB());
+    d1.display(p1);
     return 0;
 }
