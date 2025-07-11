@@ -38,4 +38,5 @@ int main()
 {
     Display d(5);
     d.output();
+    return 0;
 }
