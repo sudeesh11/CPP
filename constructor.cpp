@@ -1,3 +1,8 @@
+// Constructors - types
+//  defualt
+//  parametarized
+//  copy
+
 #include <iostream>
 using namespace std;
 
