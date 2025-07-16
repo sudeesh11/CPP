@@ -1,5 +1,5 @@
 /* Syntax -
-classname operator existing_operator(classname obj) 
+classname operator existing_operator(classname obj)
 
 using binary operater overloading in member function
 */
@@ -39,8 +39,9 @@ public:
 
 int main()
 {
-    complexNum c1(1, 2), c2(2, 3), c3;
-    c3 = c1 + c2;
-    c3.display();
-    return 0;
+    complexNum c1(1, 2), c2(2, 3), c3(5, 6), c4;
+    c4 = c1 + c2 + c3; // Evuluated from left to right c1+ c2 then c12+c3 then c4+c123
+    c4.display(); 
+    return 0; 
+    
 }
