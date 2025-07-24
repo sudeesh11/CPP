@@ -22,7 +22,7 @@ public:
     }
 };
 
-int complexNum::count;
+int complexNum::count; //defualt value is zero
 
 int main()
 {
