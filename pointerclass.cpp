@@ -15,6 +15,7 @@ public:
 int main()
 {
     hello h;
-    hello *ptr = &h;
+    hello *ptr;
+    ptr = &h;
     ptr->display();
 }
