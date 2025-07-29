@@ -1,10 +1,14 @@
 // standard template library(stl)
 
+// Container    Stores data                           vector,map
+// Iterator     Accesses container elements           it = v.begin()
+// Algorithm    Performs operations on containers     sort(),find()
+
 #include <iostream>
 #include <list>
 #include <cstring>
 
-using namespace std;
+                    using namespace std;
 
 int main()
 {
