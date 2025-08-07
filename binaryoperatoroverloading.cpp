@@ -28,7 +28,7 @@ public:
     {
         complexNum temp;
         temp.real = real + c.real;
-        temp.imag = real + c.imag;
+        temp.imag = imag + c.imag;
         return temp;
     }
     void display()
