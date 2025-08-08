@@ -47,7 +47,7 @@ public:
     }
 };
 
-void format()
+inline void format()
 {
     cout << endl
          << left << setw(5) << "ROLL" << setw(16) << "NAME" << setw(16) << "ADDRESS" << setw(5) << "MARKS" << endl;
@@ -200,7 +200,7 @@ int main()
     {
         inout.open("student.txt", ios::in);
         inout.seekp(0, ios::end);
-        int position = inout.tellg();
+        int position = inout.tellp();
         cout << "\nNumber of records: " << (position / sizeof(s)) << endl
              << "Total file size: " << position << endl;
         inout.close();
